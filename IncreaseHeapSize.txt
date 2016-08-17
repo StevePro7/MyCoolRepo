@@ -1,0 +1,10 @@
+Increase Heap Size
+24/11/2015
+test
+
+sudo defaults write /Library/Preferences/org.jenkins-ci heapSize 2048M
+
+
+sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
+
+sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
